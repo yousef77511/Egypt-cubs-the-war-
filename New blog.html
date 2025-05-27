@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yousef's Blog | Developer Insights</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen">
+    <!-- Navigation -->
+    <nav class="container mx-auto px-6 py-4 sticky top-0 z-50 bg-gray-900/80 backdrop-blur-sm">
+        <div class="flex justify-between items-center">
+            <div class="text-2xl font-bold flex items-center">
+                <span class="gradient-text">Yousef 🐣</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-blue-400 transition flex items-center">
+                    <i class="fas fa-home mr-2"></i> Home
+                </a>
+                <a href="projects.html" class="hover:text-blue-400 transition flex items-center">
+                    <i class="fas fa-code mr-2"></i> Projects
+                </a>
+                <a href="about.html" class="hover:text-blue-400 transition flex items-center">
+                    <i class="fas fa-user mr-2"></i> About
+                </a>
+                <a href="blog.html" class="text-blue-400 transition flex items-center">
+                    <i class="fas fa-blog mr-2"></i> Blog
+                </a>
+                <a href="contact.html" class="hover:text-blue-400 transition flex items-center">
+                    <i class="fas fa-envelope mr-2"></i> Contact
+                </a>
+            </div>
+            <button class="md:hidden focus:outline-none" id="menu-btn">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden mt-4" id="mobile-menu">
+            <a href="index.html" class="block py-2 hover:text-blue-400 flex items-center"><i class="fas fa-home mr-3"></i> Home</a>
+            <a href="projects.html" class="block py-2 hover:text-blue-400 flex items-center"><i class="fas fa-code mr-3"></i> Projects</a>
+            <a href="about.html" class="block py-2 hover:text-blue-400 flex items-center"><i class="fas fa-user mr-3"></i> About</a>
+            <a href="blog.html" class="block py-2 text-blue-400 flex items-center"><i class="fas fa-blog mr-3"></i> Blog</a>
+            <a href="contact.html" class="block py-2 hover:text-blue-400 flex items-center"><i class="fas fa-envelope mr-3"></i> Contact</a>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="bg-gradient-to-r from-blue-900/50 to-purple-900/50 py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                Developer <span class="gradient-text">Blog</span>
+            </h1>
+            <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                Thoughts, tutorials, and insights about web development and technology.
+            </p>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Post 1 -->
+                <article class="bg-gray-800 rounded-xl overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-blue-600 to-purple-700 relative overflow-hidden">
+                        <img src="assets/images/blog1.jpg" alt="React 2025" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 bg-blue-600 text-white px-3 py-1 text-sm font-medium">
+                            React
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-gray-400 text-sm mb-3">
+                            <span><i class="far fa-calendar mr-1"></i> May 15, 2025</span>
+                            <span class="mx-2">•</span>
+                            <span><i class="far fa-clock mr-1"></i> 5 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 hover:text-blue-400 transition">
+                            <a href="#">React 2025: What's New and Exciting</a>
+                        </h3>
+                        <p class="text-gray-400 mb-4">
+                            Exploring the latest features in React and how they can improve your development workflow.
+                        </p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 font-medium flex items-center transition">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Post 2 -->
+                <article class="bg-gray-800 rounded-xl overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-green-600 to-blue-700 relative overflow-hidden">
+                        <img src="assets/images/blog2.jpg" alt="Web Performance" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 bg-green-600 text-white px-3 py-1 text-sm font-medium">
+                            Performance
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-gray-400 text-sm mb-3">
+                            <span><i class="far fa-calendar mr-1"></i> April 28, 2025</span>
+                            <span class="mx-2">•</span>
+                            <span><i class="far fa-clock mr-1"></i> 8 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 hover:text-blue-400 transition">
+                            <a href="#">Optimizing Web Performance in 2025</a>
+                        </h3>
+                        <p class="text-gray-400 mb-4">
+                            Advanced techniques to make your websites blazing fast with modern optimization strategies.
+                        </p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 font-medium flex items-center transition">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Post 3 -->
+                <article class="bg-gray-800 rounded-xl overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-purple-600 to-pink-700 relative overflow-hidden">
+                        <img src="assets/images/blog3.jpg" alt="AI Development" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 bg-purple-600 text-white px-3 py-1 text-sm font-medium">
+                            AI
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-gray-400 text-sm mb-3">
+                            <span><i class="far fa-calendar mr-1"></i> March 10, 2025</span>
+                            <span class="mx-2">•</span>
+                            <span><i class="far fa-clock mr-1"></i> 12 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 hover:text-blue-400 transition">
+                            <a href="#">Integrating AI in Web Development</a>
+                        </h3>
+                        <p class="text-gray-400 mb-4">
+                            How artificial intelligence is transforming the way we build and interact with web applications.
+                        </p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 font-medium flex items-center transition">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="mt-12 flex justify-center">
+                <nav class="flex items-center space-x-2">
+                    <a href="#" class="px-4 py-2 border border-gray-700 rounded-lg hover:bg-gray-800 transition">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded-lg">1</a>
+                    <a href="#" class="px-4 py-2 border border-gray-700 rounded-lg hover:bg-gray-800 transition">2</a>
+                    <a href="#" class="px-4 py-2 border border-gray-700 rounded-lg hover:bg-gray-800 transition">3</a>
+                    <a href="#" class="px-4 py-2 border border-gray-700 rounded-lg hover:bg-gray-800 transition">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

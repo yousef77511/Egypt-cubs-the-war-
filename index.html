@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yousef 🐣 | Full-Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen font-sans">
+    <!-- Navigation -->
+    <nav class="container mx-auto px-6 py-4 sticky top-0 z-50 bg-gray-900/80 backdrop-blur-sm">
+        <div class="flex justify-between items-center">
+            <div class="text-2xl font-bold flex items-center">
+                <span class="gradient-text">Yousef 🐣</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-blue-400 transition flex items-center">
+                    <i class="fas fa-home mr-2"></i> Home
+                </a>
+                <a href="projects.html" class="hover:text-blue-400 transition flex items-center">
+                    <i class="fas fa-code mr-2"></i> Projects
+                </a>
+                <a href="about.html" class="hover:text-blue-400 transition flex items-center">
+                    <i class="fas fa-user mr-2"></i> About
+                </a>
+                <a href="blog.html" class="hover:text-blue-400 transition flex items-center">
+                    <i class="fas fa-blog mr-2"></i> Blog
+                </a>
+                <a href="contact.html" class="hover:text-blue-400 transition flex items-center">
+                    <i class="fas fa-envelope mr-2"></i> Contact
+                </a>
+            </div>
+            <button class="md:hidden focus:outline-none" id="menu-btn">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden mt-4" id="mobile-menu">
+            <a href="index.html" class="block py-2 text-blue-400 flex items-center"><i class="fas fa-home mr-3"></i> Home</a>
+            <a href="projects.html" class="block py-2 hover:text-blue-400 flex items-center"><i class="fas fa-code mr-3"></i> Projects</a>
+            <a href="about.html" class="block py-2 hover:text-blue-400 flex items-center"><i class="fas fa-user mr-3"></i> About</a>
+            <a href="blog.html" class="block py-2 hover:text-blue-400 flex items-center"><i class="fas fa-blog mr-3"></i> Blog</a>
+            <a href="contact.html" class="block py-2 hover:text-blue-400 flex items-center"><i class="fas fa-envelope mr-3"></i> Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-6 py-20 md:py-32">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    Hi, I'm <span class="gradient-text">Yousef 🐣</span>
+                </h1>
+                <p class="text-xl text-gray-400 mb-8">
+                    Full-Stack Developer crafting digital experiences with modern web technologies.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="projects.html" class="bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 rounded-lg font-medium hover:opacity-90 transition flex items-center">
+                        <i class="fas fa-code mr-2"></i> View Projects
+                    </a>
+                    <a href="contact.html" class="border border-gray-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition flex items-center">
+                        <i class="fas fa-paper-plane mr-2"></i> Contact Me
+                    </a>
+                    <a href="assets/Yousef_CV.pdf" download class="bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-lg font-medium transition flex items-center">
+                        <i class="fas fa-download mr-2"></i> Download CV
+                    </a>
+                </div>
+                
+                <!-- Social Links -->
+                <div class="mt-8 flex space-x-4">
+                    <a href="https://github.com/yousef-dev" target="_blank" class="w-12 h-12 rounded-full bg-gray-700 hover:bg-gray-600 flex items-center justify-center transition">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yousef-dev" target="_blank" class="w-12 h-12 rounded-full bg-gray-700 hover:bg-gray-600 flex items-center justify-center transition">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="https://twitter.com/yousef_dev" target="_blank" class="w-12 h-12 rounded-full bg-gray-700 hover:bg-gray-600 flex items-center justify-center transition">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="https://wa.me/201551561366" target="_blank" class="w-12 h-12 rounded-full bg-gray-700 hover:bg-gray-600 flex items-center justify-center transition">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center overflow-hidden shadow-2xl animation-float">
+                        <img src="assets/images/profile.jpg" alt="Yousef" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-5 -right-5 bg-gray-800 px-4 py-2 rounded-full shadow-lg border border-gray-700">
+                        <span class="text-sm font-medium">Available for work</span>
+                        <span class="ml-2 w-2 h-2 inline-block rounded-full bg-green-500 pulse-slow"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-2 text-center">
+                My <span class="gradient-text">Services</span>
+            </h2>
+            <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+                I offer comprehensive solutions to bring your digital ideas to life.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-700 rounded-xl p-8 hover:bg-gray-600 transition duration-300">
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Web Development</h3>
+                    <p class="text-gray-400">
+                        Custom websites and web applications built with modern frameworks like React, Vue, and Angular.
+                    </p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-gray-700 rounded-xl p-8 hover:bg-gray-600 transition duration-300">
+                    <div class="text-purple-400 text-4xl mb-4">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Mobile Development</h3>
+                    <p class="text-gray-400">
+                        Cross-platform mobile apps using React Native and Flutter for iOS and Android.
+                    </p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-gray-700 rounded-xl p-8 hover:bg-gray-600 transition duration-300">
+                    <div class="text-green-400 text-4xl mb-4">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Backend Development</h3>
+                    <p class="text-gray-400">
+                        Robust API development with Node.js, Express, Django, and database architecture.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">
+                Client <span class="gradient-text">Testimonials</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-800 rounded-xl p-8 relative">
+                    <div class="absolute -top-4 -left-4 text-6xl text-gray-700">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 relative z-10">
+                        "Yousef delivered our e-commerce platform ahead of schedule. His attention to detail and problem-solving skills are exceptional."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="assets/images/client1.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-bold">Ahmed Mohamed</h4>
+                            <p class="text-gray-400 text-sm">CEO, TechSolutions</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-800 rounded-xl p-8 relative">
+                    <div class="absolute -top-4 -left-4 text-6xl text-gray-700">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 relative z-10">
+                        "Working with Yousef was a pleasure. He transformed our complex requirements into a beautiful, functional application."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="assets/images/client2.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-bold">Sarah Johnson</h4>
+                            <p class="text-gray-400 text-sm">Product Manager, InnovateCo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
